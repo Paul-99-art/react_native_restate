@@ -10,7 +10,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text className="text-2xl font-semibold text-gray-800 text-center my-10">
+      <Text className="font-bold my-10 font-rubik text-3xl">
   Welcome to Vancouver's Real Estate
 </Text>
       <Link href="/sign-in">Sign in</Link>

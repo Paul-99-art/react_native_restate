@@ -24,7 +24,7 @@ export async function login(){
 
         if(!response) throw new Error('Failed to login');
 
-        const browserResult = await openAuthSessionAsync(
+        const browserResult = await openOAuthSessionAsync(
             response.toString(),
             redirectUri
         )
@@ -48,10 +48,6 @@ export async function login(){
         console.error(error);
         return false;
     }
-}
-
-function openAuthSessionAsync(arg0: string, redirectUri: string) {
-    throw new Error('Function not implemented.');
 }
 
 export async function logout(){
